@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: springbootcontainer
-        image: dockershahu/spring-boot-docker
+        image: dockershahu/spring-boot-mongo:${buildNumber}
         ports:
         - containerPort: 8080
         env:
@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: mongdbcontainer
-        image: mongo
+        image: mongo:${buildNumber}
         ports:
         - containerPort: 27017
         env:
